@@ -1,0 +1,14 @@
+[2021-10-16 05:05:01] local.ERROR: The "-s" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"-s\" option does not exist. at E:\\project\\access.site\\access-site\\vendor\\symfony\\console\\Input\\ArgvInput.php:115)
+[stacktrace]
+#0 E:\\project\\access.site\\access-site\\vendor\\symfony\\console\\Input\\ArgvInput.php(97): Symfony\\Component\\Console\\Input\\ArgvInput->parseShortOptionSet('serve')
+#1 E:\\project\\access.site\\access-site\\vendor\\symfony\\console\\Input\\ArgvInput.php(78): Symfony\\Component\\Console\\Input\\ArgvInput->parseShortOption('-serve')
+#2 E:\\project\\access.site\\access-site\\vendor\\symfony\\console\\Input\\Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 E:\\project\\access.site\\access-site\\vendor\\symfony\\console\\Command\\Command.php(258): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#4 E:\\project\\access.site\\access-site\\vendor\\symfony\\console\\Application.php(978): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 E:\\project\\access.site\\access-site\\vendor\\symfony\\console\\Application.php(295): Symfony\\Component\\Console\\Application->doRunCommand(Object(Symfony\\Component\\Console\\Command\\ListCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 E:\\project\\access.site\\access-site\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 E:\\project\\access.site\\access-site\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(94): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 E:\\project\\access.site\\access-site\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 E:\\project\\access.site\\access-site\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 {main}
+"} 

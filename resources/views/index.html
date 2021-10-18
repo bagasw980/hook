@@ -19,10 +19,10 @@
         <nav>
             <div class="navbar">
                 <ul>
-                    <li>ABout</li>
-                    <li>ABout</li>
-                    <li>ABout</li>
-                    <li>ABout</li>
+                    <li><a href="">ABout</a></li>
+                    <li><a href="">ABout</a></li>
+                    <li><a href="">ABout</a></li>
+                    <li><a href="">ABout</a></li>
                 </ul>
             </div>
             <div class="button-bars">
@@ -43,17 +43,15 @@
                 Sehingga mahasiswa belum bisa untuk presensi.
             </p>
             <ul>
-                <li>
-                    <a href="">Youtube <i class="fas fa-bars"></i></a>
-                </li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Whatsapp</a></li>
-                <li>
-                    <a href=""
-                        >Twitterooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</a
-                    >
-                </li>
+                <a href="">
+                    <li>Youtube <i class="fas fa-bars"></i></li>
+                </a>
+                <a href=""><li>Instagram</li></a>
+                <a href=""><li>Facebook</li></a>
+                <a href=""><li>Whatsapp</li></a>
+                <a href="">
+                    <li>Twitterooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</li>
+                </a>
             </ul>
         </div>
         <script src="../../public/assets/jquery-3.6.0.min.js"></script>
@@ -62,10 +60,12 @@
                 $(".icon").click(function () {
                     if ($(".icon").hasClass("ion-md-menu")) {
                         $(".navbar").css("width", "300px");
+                        $(".navbar").css("padding", "80px 10px");
                         $(".icon").removeClass("ion-md-menu");
                         $(".icon").addClass("ion-md-close");
                     } else {
                         $(".navbar").css("width", "0px");
+                        $(".navbar").css("padding", "80px 0px");
                         $(".icon").removeClass("ion-md-close");
                         $(".icon").addClass("ion-md-menu");
                     }
