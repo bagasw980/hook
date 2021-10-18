@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Title</title>
+        <link
+            rel="stylesheet"
+            href="../../public/assets/bootstrap/css/bootstrap.min.css"
+        />
+        <link
+            href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../public/assets/css/style.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li>ABout</li>
+                    <li>ABout</li>
+                    <li>ABout</li>
+                    <li>ABout</li>
+                </ul>
+            </div>
+            <div class="button-bars">
+                <i id="icon" class="icon ion-md-menu"></i>
+            </div>
+        </nav>
+        <div id="content">
+            <div class="profile">
+                <div
+                    class="image"
+                    style="
+                        background-image: url('https://d1ralsognjng37.cloudfront.net/30e1a931-61b1-4afa-aee5-097ce1088dec.jpeg');
+                    "
+                ></div>
+                <p>UNS - Open CourseWare</p>
+            </div>
+            <p class="deskripsi">
+                Sehingga mahasiswa belum bisa untuk presensi.
+            </p>
+            <ul>
+                <li>
+                    <a href="">Youtube <i class="fas fa-bars"></i></a>
+                </li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Whatsapp</a></li>
+                <li>
+                    <a href=""
+                        >Twitterooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</a
+                    >
+                </li>
+            </ul>
+        </div>
+        <script src="../../public/assets/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".icon").click(function () {
+                    if ($(".icon").hasClass("ion-md-menu")) {
+                        $(".navbar").css("width", "300px");
+                        $(".icon").removeClass("ion-md-menu");
+                        $(".icon").addClass("ion-md-close");
+                    } else {
+                        $(".navbar").css("width", "0px");
+                        $(".icon").removeClass("ion-md-close");
+                        $(".icon").addClass("ion-md-menu");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
